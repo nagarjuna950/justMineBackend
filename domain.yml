@@ -59,6 +59,7 @@ actions:
 - utter_thankyou
 - utter_thankyou1
 - utter_welcome_message
+- utter_question
 entities:
 - feedback
 - feedback3
@@ -70,6 +71,7 @@ entities:
 
 forms:
 - feedback_form
+- feedback_form1
 - feedback_form3
 - feedback_form5
 - feedback_form4
@@ -89,6 +91,8 @@ intents:
 - mood_3
 - mood_4
 - mood_5
+- deny
+- confirm
 
 slots:
   opt:
@@ -118,7 +122,7 @@ templates:
   utter_goodbye:
   - text: Bye
   utter_greet:
-  - text: Hey!This is Dora here.CK's new Smart Assistant.
+  - text: Hey! This is Dora here. Just Mine’s new Smart Assistant.
   utter_greet1:
   - text: I am here to spend a couple of minutes with you about your last 90 days
       in CavinKare.
@@ -143,10 +147,10 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Ingredients
+      title: Ingredients
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -166,10 +170,10 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Ingredients
+      title: Ingredients
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -180,9 +184,9 @@ templates:
       title: Anti-Frizziness
     - payload: Packaging
       title: Packaging
-    - payload: Extra Input
-      title: Extra Input
-    text: Perfection is a Journey and not a destination. We would like to know if there is anything that you want us to improve on in the shampoo?(You may select multiple options, if needed)
+    - payload: Other Reasons
+      title: Other Reasons
+    text: Perfection is a Journey and not a destination. We would like to know if there is anything that you want us to improve on in the shampoo. (You may select multiple options, if needed)
   utter_q1_five_apo1:
   - text: We are delighted to know that we have been perfect for you!
   utter_q1_four_a:
@@ -193,8 +197,8 @@ templates:
       title: Colour
     - payload: 'Effect of Ingredients '
       title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -207,7 +211,7 @@ templates:
       title: Packaging
     - payload: Others
       title: Others
-    text: What would you like us to improve on for your shampoo from Just Mine!
+    text: What would you like us to improve on for your shampoo from Just Mine! to become your perfect one?
   utter_q1_four_apo1:
   - text: We are pleased that you liked your shampoo from Just Mine!
   utter_q1_four_apo2:
@@ -220,8 +224,8 @@ templates:
       title: Colour
     - payload: 'Effect of Ingredients '
       title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -232,8 +236,8 @@ templates:
       title: Anti-Frizziness
     - payload: Packaging
       title: Packaging
-    - payload: Extra Input
-      title: Extra Input
+    - payload: Other Reasons
+      title: Other Reasons
     text: Did you like anything specifically in the shampoo? (You may select multiple options, if needed)
   utter_q1_one_a:
   - buttons:
@@ -243,8 +247,8 @@ templates:
       title: Colour
     - payload: 'Effect of Ingredients '
       title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -257,7 +261,7 @@ templates:
       title: Packaging
     - payload: Others
       title: Others
-    text: We would like to know the reasons for your bad experience
+    text: We would like to know the reason(s) for your bad experience
   utter_q1_one_apo1:
   - text: We apologize for your bad experience!
   utter_q1_one_apo2:
@@ -270,8 +274,8 @@ templates:
       title: Colour
     - payload: 'Effect of Ingredients '
       title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -297,8 +301,8 @@ templates:
       title: Colour
     - payload: 'Effect of Ingredients '
       title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -309,8 +313,8 @@ templates:
       title: Anti-Frizziness
     - payload: Packaging
       title: Packaging
-    - payload: Extra Input
-      title: Extra Input
+    - payload: Other Reasons
+      title: Other Reasons
     text: Did you like anything specifically in the shampoo? (You may select multiple options, if need be)
   utter_q1_two_a:
   - buttons:
@@ -318,10 +322,10 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: 'Ingredients'
+      title: 'Ingredients'
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -346,10 +350,10 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
-    - payload: Cleansing properties
-      title: Cleansing properties
+    - payload: 'Ingredients'
+      title: 'Ingredients'
+    - payload: Cleansing Performance
+      title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
     - payload: ' Foaming Quality '
@@ -360,9 +364,9 @@ templates:
       title: Anti-Frizziness
     - payload: Packaging
       title: Packaging
-    - payload: Extra Input
-      title: Extra Input
-    text: Did you like anything specifically in the shampoo? (You may select multiple options,if needed)
+    - payload: Other Reasons
+      title: Other Reasons
+    text: Did you like anything specifically in the shampoo? (You may select multiple options, if needed)
   utter_q2:
   - buttons:
     - payload: 5star
@@ -384,12 +388,12 @@ templates:
       title: Intuitive response
     - payload: Questions for the survey
       title: Questions for the survey
-    - payload: Payment transaction
-      title: Payment transaction
+    - payload: Shampoo delivery
+      title: Shampoo delivery
     - payload: Helpful Descriptions
       title: Helpful Descriptions
-    - payload: Additional Input
-      title: Additional Input
+    - payload: Additional Reasons
+      title: Additional Reasons
     text: What did you like about Just Mine! that made you give us the Gold in the Olympics for shampoos?
   utter_q2_five_apo1:
   - text: We are delighted to know that we have been perfect for you!
@@ -407,9 +411,9 @@ templates:
       title: Hair problems descriptions
     - payload: Fragrance descriptions
       title: Fragrance descriptions
-    - payload: Additional Input
-      title: Additional Input
-    text: What would you like about Just Mine!, that won you over?
+    - payload: Additional Reasons
+      title: Additional Reasons
+    text: What would you like us to improve on, that can make your experience in ordering from Just Mine!, the perfect one?
   utter_q2_four_apo1:
   - text: We are pleased that you enjoyed your ordering experience from Just Mine!
   utter_q2_four_apo2:
@@ -427,9 +431,9 @@ templates:
       title: Hair problems descriptions
     - payload: Fragrance descriptions
       title: Fragrance descriptions
-    - payload: Additional Input
-      title: Additional Input
-    text: To improve ourselves and serve you better,we would like to know the reason for your bad experience
+    - payload: Additional Reasons
+      title: Additional Reasons
+    text: To improve ourselves and serve you better, we would like to know the reason for your bad experience
   utter_q2_one_apo1:
   - text: We apologize for your bad experience!
   utter_q2_one_apo2:
@@ -448,9 +452,9 @@ templates:
       title: Hair problems descriptions
     - payload: Fragrance descriptions
       title: Fragrance descriptions
-    - payload: Additional Input
-      title: Additional Input
-    text: To improve ourselves and serve you better,we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
+    - payload: Additional Reasons
+      title: Additional Reasons
+    text: To improve ourselves and serve you better, we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
   utter_q2_two_apo1:
   - text: We apologize for your below average experience!
   utter_q2_two_apo2:
@@ -469,7 +473,13 @@ templates:
     - payload: No
       title: No
     text: Will you be willing to buy your Just Mine! shampoo for Rs. 649?
-
+  utter_question:
+  - buttons:
+    # - payload: yep
+    #   title: /confirm
+    - payload: skip
+      title: /deny
+    text: Is there anything that you want us to specifically work on to make your Just Mine! shampoo experience, the best one ever?
   utter_q2_three_a:
   - buttons:
     - payload: OTP process
@@ -482,21 +492,21 @@ templates:
       title: Hair problems descriptions
     - payload: Fragrance descriptions
       title: Fragrance descriptions
-    - payload: Additional Input
-      title: Additional Input
-    text: To improve ourselves and serve you better,we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
+    - payload: Additional Reasons
+      title: Additional Reasons
+    text: To improve ourselves and serve you better, we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
   utter_q2_three_apo2:
   - text: If we were to participate in the Olympics for shampoos, we would want to win nothing but Gold
   utter_ask_opt:
-  - text: Is there anything that you want us to specifically work on to make your Just Mine!shampoo experience,the best one ever?
+  - text: Please share your response below in the text box.
   utter_ask_opt1:
-  - text: Which shampoo did you use before Just Mine!?
+  - text: Which shampoo did you use before Just Mine!? <br/>Please share your response below in the text box.
   utter_ask_feedback3:
-  - text: Type a message
+  - text: Kindly share your reason in the text box below
   utter_ask_feedback5:
-  - text: Type a message
+  - text: Kindly share your reason in the text box below
   utter_ask_feedback4:
-  - text: Type a message
+  - text: Kindly share your reason in the text box below
   utter_slots_values:
   - text: "Entered Text:\n - q3: {opt}\n - q4: {opt1}"
   utter_slots_values3:
@@ -510,6 +520,6 @@ templates:
   utter_thankyou:
   - text: Highly delighted to hear that!
   utter_thankyou1:
-  - text: Thank you for your valuable feedback! We sincerely appreciate that you could spend your valuable time in helping make your Just Mine! shampoo, the best ever!
+  - text: notThanks
   utter_welcome_message:
   - text: This is Dora.Say Hi to me

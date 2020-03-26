@@ -17,6 +17,8 @@
 - thank you bye
 - good
 
+
+
 ## intent:greet
 - hey
 - hello there
@@ -72,14 +74,15 @@
 - Fragrance
 - Colour
 - Effect of Ingredients
-- Cleansing properties
+- Cleansing Performance
 - Conditioning
 - Foaming Quality
 - Moisturizing effects
 - Anti-Frizziness
 - Packaging
 - [Others](opt)
-- [Extra Input](opt2)
+- [Other Reasons](opt2)
+- Ingredients
 
 ## intent:options_q2
 - OTP generation
@@ -90,8 +93,8 @@
 - website design and flow
 - Intuitive response
 - Helpful Descriptions
-- Payment transaction
-- [Additional Input](opt1)
+- Shampoo delivery
+- [Additional Reasons](opt1)
 
 ## intent:mood_1
 - ONE
@@ -106,5 +109,20 @@
 
 ## intent:welcome
 - This is Dora.Say Hi to me
+
+## intent: deny
+  - skip
+  - SKIP
+  - nah
+  - Nope
+  - Never
+  - No way
+
+## intent: confirm
+
+  - ya
+  - yep
+  - ok
+  - right
 
 

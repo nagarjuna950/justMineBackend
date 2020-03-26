@@ -86,7 +86,7 @@ class Feedback(FormAction):
     def required_slots(tracker: Tracker) -> List[Text]:
         """A list of required slots that the form has to fill"""
 
-        return ["opt","opt1"]
+        return ["opt"]
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         """A dictionary to map required slots to
@@ -96,14 +96,16 @@ class Feedback(FormAction):
             or a list of them, where a first match will be picked"""
 
         return {
+
             
             "opt": [self.from_entity(entity="opt"), self.from_text()],
-            "opt1": [self.from_entity(entity="opt1"), self.from_text()],
+            #"opt1": [self.from_entity(entity="opt1"), self.from_text()],
 
            
             
         }
     
+      
     def submit(
         self,
         dispatcher: CollectingDispatcher,
@@ -116,6 +118,57 @@ class Feedback(FormAction):
         # utter submit template
         dispatcher.utter_template("utter_submit", tracker)
         return []
+
+
+class Feedback(FormAction):
+    """Example of a custom form action"""
+
+    def name(self) -> Text:
+        """Unique identifier of the form"""
+
+        return "feedback_form1"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+        """A list of required slots that the form has to fill"""
+
+        return ["opt1"]
+
+    def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        """A dictionary to map required slots to
+            - an extracted entity
+            - intent: value pairs
+            - a whole message
+            or a list of them, where a first match will be picked"""
+
+        return {
+
+            
+            #"opt": [self.from_entity(entity="opt"), self.from_text()],
+            "opt1": [self.from_entity(entity="opt1"), self.from_text()],
+
+           
+            
+        }
+    
+      
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        """Define what the form has to do
+            after all required slots are filled"""
+
+        # utter submit template
+        dispatcher.utter_template("utter_submit", tracker)
+        return []
+
+
+
+
+
 
 class Feedback(FormAction):
     """Example of a custom form action"""

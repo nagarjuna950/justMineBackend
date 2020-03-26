@@ -14,14 +14,21 @@ action_endpoint:
  url: "http://localhost:5055/webhook"
 
 
+# tracker_store:
+#     type: SQL
+#     dialect: "mysql+pymysql"  # the dialect used to interact with the db
+#     url: "localhost"  # (optional) host of the sql db, e.g. "localhost"
+#     db: "mamun"  # path to your db
+#     username: "root"
+
+
 tracker_store:
     type: SQL
     dialect: "mysql+pymysql"  # the dialect used to interact with the db
-    url: "localhost"  # (optional) host of the sql db, e.g. "localhost"
-    db: "nagarjuna"  # path to your db
-    username: root
-    password: root
-
+    url: "justminedb.mysql.database.azure.com"  # (optional) host of the sql db, e.g. "localhost"
+    db: "justminedb"  # path to your db
+    username: "justminedb@justminedb"
+    password: "#Justmine123456"
 
 
 
@@ -31,7 +38,7 @@ tracker_store:
 #    url: "localhost"  # (optional) host of the sql db, e.g. "localhost"
 #    db: "rasa"  # path to your db
 #    username:  yuva_user
-#   password:  yuva
+#    password:  yuva
     
     
 
