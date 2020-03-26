@@ -153,8 +153,8 @@ templates:
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -176,8 +176,8 @@ templates:
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -195,14 +195,14 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -222,14 +222,14 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -245,14 +245,14 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -272,14 +272,14 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -299,14 +299,14 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Effect of Ingredients '
-      title: 'Effect of Ingredients '
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title:  Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -328,8 +328,8 @@ templates:
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -356,8 +356,8 @@ templates:
       title: Cleansing Performance
     - payload: Conditioning
       title: Conditioning
-    - payload: ' Foaming Quality '
-      title: ' Foaming Quality '
+    - payload: Foaming Quality
+      title: Foaming Quality
     - payload: Moisturizing effects
       title: Moisturizing effects
     - payload: Anti-Frizziness
@@ -382,8 +382,8 @@ templates:
     text: Did you love your ordering experience on www.just-mine.in?
   utter_q2_five_a:
   - buttons:
-    - payload: website design and flow
-      title: website design and flow
+    - payload: Website design and flow
+      title: Website design and flow
     - payload: Intuitive response
       title: Intuitive response
     - payload: Questions for the survey
@@ -425,8 +425,8 @@ templates:
       title: OTP generation
     - payload: Website response
       title: Website response
-    - payload: 'Too many questions '
-      title: 'Too many questions '
+    - payload: Too many questions
+      title: Too many questions
     - payload: Hair problems descriptions
       title: Hair problems descriptions
     - payload: Fragrance descriptions
