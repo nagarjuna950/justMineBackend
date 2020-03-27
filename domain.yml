@@ -322,8 +322,8 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Ingredients'
-      title: 'Ingredients'
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning
@@ -350,8 +350,8 @@ templates:
       title: Fragrance
     - payload: Colour
       title: Colour
-    - payload: 'Ingredients'
-      title: 'Ingredients'
+    - payload: Effect of Ingredients
+      title: Effect of Ingredients
     - payload: Cleansing Performance
       title: Cleansing Performance
     - payload: Conditioning

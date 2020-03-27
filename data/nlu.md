@@ -90,7 +90,7 @@
 - Too many questions
 - Hair problems descriptions
 - Fragrance descriptions
-- website design and flow
+- Website design and flow
 - Intuitive response
 - Helpful Descriptions
 - Shampoo delivery
